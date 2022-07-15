@@ -1,0 +1,79 @@
+<html>
+<head>
+<script>
+function one()
+{
+
+x= document.getElementById("d2");
+z=document.getElementById("textArea");
+x.innerHTML = z.value;
+
+}
+
+</script>
+
+<style>
+
+body{
+background: white;
+
+}
+
+p{
+display: block;
+border: 0.5px black;
+width: 10%;
+background: blanchedalmond;
+}
+
+#d1 {
+
+border: 1px black;
+margin-right: 40%;
+width: 40%;
+height: 60%;
+position: absolute;
+
+
+}
+
+#d2{
+
+background: white;
+border: 2px black;
+margin-left:40%;
+position: absolute;
+width: 40%;
+height: 60%;
+
+}
+
+#output{
+
+position: absolute;
+display: block;
+background: white;
+width: 40%;
+margin-top: -40px;
+margin-left: 40%;
+}
+
+</style>
+</head>
+<body>
+<div id="output"> Output: </div>
+<div id="d1"> 
+ <textarea id="textArea" onkeyup="one()" style="background-color:whitesmoke;">
+</textarea>
+</div>
+
+
+
+ 
+<div id="d2"> </div> 
+
+
+</body>
+
+
+</html>
